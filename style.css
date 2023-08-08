@@ -112,10 +112,12 @@ header{
   align-items: center;
   transition: 0.5s ease;
 }
+
 header.sticky{
   background: #3a6cf4;
   padding: 10px 200px;
 }
+
 header .brand{
   color: #fff;
   font-size: 1.8em;
@@ -123,9 +125,11 @@ header .brand{
   text-transform: uppercase;
   text-decoration: none;
 }
+
 header .navigation{
   position: relative;
 }
+
 header .navigation a{
   color: #fff;
   font-size: 1em;
@@ -134,12 +138,15 @@ header .navigation a{
   text-decoration: none;
   margin-left: 30px;
 }
+
 header .navigation a:hover{
   color: #3a6cf4;
 }
+
 header.sticky .navigation a:hover{
   color: #000;
 }
+
 body{
   min-height: 110vh;
 }
@@ -159,6 +166,7 @@ body{
   font-weight: 800;
   margin-bottom: 60px;
 }
+
 .section-title:before{
   content: '';
   position: absolute;
@@ -525,4 +533,72 @@ body{
   color: #3a6cf4;
   font-weight: 600;
   text-decoration: none;
+}
+
+@media (max-width: 1040px) {
+ 
+  header{
+    padding: 12px 20px;
+  }
+
+  header.sticky{
+    padding: 10px 20px;
+  }
+
+  header .navigation{
+    display: none;
+  }
+
+  header .navigation.active{
+    z-index: 888;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    right: 0;
+    width: 380px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    transition: .3s ease;
+  }
+  
+  header .navigation a{
+    color: #000;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 0 20px;
+    border-radius: 20px;
+  }
+  
+  header .navigation a:hover{
+    background: #3a6cf4;
+    color: #fff;
+    transition: .3s ease;
+  }
+
+  .menu-btn{
+    position: absolute;
+    background: url(images/menu.png)no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .3s ease;
+  }
+
+  .menu-btn.active{
+    z-index: 999;
+    background: url(images/close.png)no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition: .3s ease;
+    filter: invert(1);
+  }
+ 
 }
