@@ -83,6 +83,7 @@ section{
   text-decoration: none;
   letter-spacing: 1px;
   border-radius: 2px;
+  margin-top: 30px;
   transition: 0.5s ease;
 }
 .btn:hover{
@@ -600,5 +601,53 @@ body{
     transition: .3s ease;
     filter: invert(1);
   }
+
+  section{
+    padding: 80px 20px;
+  }
+
+  .main .content h2{
+    font-size: 1em;
+  }
+
+  .animated-text h3{
+    font-size: 2.2em;
+  }
+
+  .section-title{
+    font-size: 1.8em;
+  }
+
+  .about .content{
+    flex-direction: column;
+  }
+
+  .about .content .column{
+    position: relative;
+    width: 100%;
+  }
+  
+  .about .content .col-right{
+    margin-top: 40px;
+  }
+
+  .skills .content{
+    flex-direction: column;
+  }
+
+  .skills .content .column{
+    position: relative;
+    width: 100%;
+  }
+  
+  .skills .content .col-right{
+    margin-top: 40px;
+  }
+
+  .contact-form{
+    padding: 35px 40px;
+  }
+
+
  
 }
