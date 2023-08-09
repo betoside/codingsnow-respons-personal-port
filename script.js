@@ -1,4 +1,3 @@
-
 //javascript for navigation bar effects on scroll
 window.addEventListener('scroll', () => {
   const header = document.querySelector('header');
@@ -11,7 +10,7 @@ const menuBtn = document.querySelector('.menu-btn');
 const navigation = document.querySelector('.navigation');
 const navigationItems = document.querySelectorAll('.navigation a');
 
-menuBtn.addEventListener('click', () => {
+menuBtn.addEventListener('click', function(){
   menuBtn.classList.toggle('active');
   navigation.classList.toggle('active');
 });
